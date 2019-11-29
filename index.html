@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+
+    <title>
+        Ghom Games - Tetris
+    </title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" href="img/tetris.ico">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script type="text/javascript" src="core/const.js"></script>
+    <script type="text/javascript" src="core/vector.js"></script>
+    <script type="text/javascript" src="core/bloc.js"></script>
+    <script type="text/javascript" src="core/tetromino.js"></script>
+    <script type="text/javascript" src="core/tetris.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="core/functions.js"></script>
+</head>
+
+<body onload="initialize();" class="blackground" id="body">
+
+    <img src="img/gneu.png" class="spawn" id="pepe">
+
+    <div class="flexbox">
+        <div>
+            <h1 class="text"><img src="img/tetris.ico" alt="Yay" class="emoji"> Tetris Game by Ghom <img src="img/pepe90.png" alt="Yay" class="emoji"></h1>
+            <div class="flexbox">
+
+                <canvas id="canvas" width="500px" height="500px">
+                    <div class="text">
+                        Le tetris ne fonctionne pas sur votre navigateur !<br>
+                        Essayez donc avec un vrai navigateur <img src="img/kappa.png" alt="Kappa" class="emoji">
+                    </div>
+                </canvas>
+
+            </div>
+            <div class="flexbox" id="panel"></div>
+        </div>
+    </div>
+</body>
+</html>

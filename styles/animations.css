@@ -1,0 +1,40 @@
+
+@keyframes vibration {
+    0% {
+        transform: translateX(-2px)
+    }
+    100% {
+        transform: translateX(4px)
+    }
+}
+
+@keyframes spawn {
+    0% {
+        bottom: -100px
+    }
+    40% {
+        transform: scale(1,1);
+    }
+    59% {
+        bottom: 0;
+    }
+    60% {
+        transform: scale(.9,1.1);
+        bottom: 0;
+    }
+    80% {
+        transform: scale(1,1);
+        bottom: 0;
+    }
+    100% {
+        transform: scale(1,1);
+        bottom: 0;
+    }
+}
+
+.vibration {
+    animation: vibration 100ms infinite;
+}
+.spawn {
+    animation: spawn 800ms;
+}
